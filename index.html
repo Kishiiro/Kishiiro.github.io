@@ -8,31 +8,76 @@
     <link rel="stylesheet" link href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body>     
-  <nav class="sidebar">
-    <header>
-        <div class="image-text">
-            <span class="image">
-                <img src="picture/Me.png" alt="Me">
-            </span>
-            <div class="text">
-                <span class="name">Makilan Rolison D.</span>
-                <span class="occupation">IT Student</span>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="picture/Me.png" alt="Me">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Rolison Makilan</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class="bi bi-arrow-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bi bi-house icon"></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bi bi-patch-check icon"></i>
+                            <span class="text nav-text">Certificates</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bi bi-file-person icon"></i>
+                            <span class="text nav-text">About Me</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
             </div>
         </div>
-        <i class="bi bi-arrow-right-circle toggle"></i>
-    </header>
-    <div class="menu-bar">
-        <div class="menu">
-            <ul class="menu-links">
-                <li class="nav-link">
-                    <a href="#">
-                        <span class="textnav"><i class="bi bi-house-door-fill icon"></i>Dashboard</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-  </nav>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Welcome</div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+    </script>
+
 </body>
 </html>
