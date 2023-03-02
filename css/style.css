@@ -26,17 +26,17 @@ p {
 a {
     font-weight: 700;
     text-decoration: none;
-    color: rgb(43, 0, 112);
+    color: rgb(22, 5, 173);
 }
 
 a:hover {
-    color: rgb(236, 236, 236);
+    color: rgb(247, 243, 13);
 }
 
 /* Top Section */
 
 .top-section {
-    height: 300px;
+    height: 900px;
     background-color: #5b758a;
     color: rgb(255, 255, 255);
     position: relative;
@@ -54,7 +54,11 @@ a:hover {
 
 
 /* About Section */
-
+.about-section {
+    height: 900px;
+    background-color: #ffffff;
+    position: relative;
+}
 .about-section .container {
     display: grid;
     grid-template-areas: "pro-pic"
@@ -66,8 +70,10 @@ a:hover {
 }
 
 .pic img {
-    width: 300px;
+    width: 500px;
     height: auto;
+    border-radius: 90px;
+    border-style: solid;
 }
 
 .about-info {
@@ -96,7 +102,7 @@ a:hover {
 }
 
 th, td {
-    border: 1px solid white;
+    border: 1px solid rgb(233, 236, 26);
     padding: 5px 20px;
 }
 
