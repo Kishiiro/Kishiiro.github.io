@@ -44,11 +44,12 @@
 .btn {
     font-weight: 500;
     transition: .5s;
+  
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #ffffff;
+    color: white;
 }
 
 .btn-square {
@@ -310,3 +311,39 @@
 .certificate-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+/*** Cube ***/
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  .spinner {
+    position: relative;
+    width: 45px;
+    height: 45px;
+  
+    animation: loading 2s linear infinite;
+  }
+  
+  .bubble-1,
+  .bubble-2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #4b9cdb;
+  }
+  
+  .bubble-2 {
+    top: auto;
+    bottom: -100px;
+    background-color: red;
+  }
+  @keyframes loading {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
